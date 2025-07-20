@@ -9,12 +9,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>HTML & CSS</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>React Native</li>
       </ul>
     ),
   },
@@ -23,8 +25,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>University of Moratuwa</li>
+        <li>Department of Computer Science and Engineering</li>
+        <li>Third-year undergraduate</li>
       </ul>
     ),
   },
@@ -33,8 +36,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Full-stack Web Development</li>
+        <li>Mobile App Development</li>
+        <li>UI/UX Design</li>
       </ul>
     ),
   },
@@ -59,10 +63,12 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            working with JavaScript, React, Node.js, Express, MongoDB, MySQL,
+            HTML, CSS, and React Native. I am a quick learner and I am always
+            looking to expand my knowledge and skill set. As a third-year
+            undergraduate at the University of Moratuwa, I am enthusiastic about
+            both web development and mobile app development, and I'm excited to
+            work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
