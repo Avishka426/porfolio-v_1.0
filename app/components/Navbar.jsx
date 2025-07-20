@@ -34,7 +34,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-3xl font-bold"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-br from-green-800 via-lime-500 to-yellow-400">
             AV
           </span>
         </Link>

@@ -150,10 +150,10 @@ const SkillsSection = () => {
               <button
                 key={category.name}
                 onClick={() => handleCategoryChange(category.name)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 text-sm ${
                   activeCategory === category.name
-                    ? "bg-gradient-to-r from-green-500 to-green-400 text-white font-bold"
-                    : "bg-transparent border border-white text-white hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 hover:text-white hover:border-transparent"
+                    ? "bg-gradient-to-br from-green-800 via-lime-500 to-yellow-400 text-white shadow-lg shadow-green-500/25"
+                    : "bg-gray-800 text-gray-300 hover:bg-gradient-to-tr hover:from-green-800 hover:via-lime-500 hover:to-yellow-400 hover:text-white border border-gray-700 hover:border-yellow-400"
                 }`}
               >
                 {category.name}

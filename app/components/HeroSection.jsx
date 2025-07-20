@@ -15,12 +15,12 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-green-800 via-lime-500 to-yellow-400">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-green-800 via-lime-500 to-yellow-400">
             Avishka Vishmitha
             </span>
             <br></br>
@@ -37,7 +37,7 @@ const HeroSection = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400"
+              className="text-transparent bg-clip-text bg-gradient-to-bl from-green-800 via-lime-500 to-yellow-400"
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
@@ -46,17 +46,15 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 to-green-400 hover:from-green-600 hover:to-green-500 text-white font-bold"
+              className="px-8 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-800 via-lime-500 to-yellow-400 hover:bg-gradient-to-tl hover:from-green-700 hover:via-lime-400 hover:to-yellow-300 text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25"
             >
               Hire Me
             </Link>
             <Link
               href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 to-green-400 hover:bg-slate-800 text-white mt-3"
+              className="px-8 inline-block py-4 w-full sm:w-fit rounded-full bg-gradient-to-tr from-green-800 via-lime-500 to-yellow-400 hover:bg-gradient-to-bl hover:from-green-700 hover:via-lime-400 hover:to-yellow-300 text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25 mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Resume
-              </span>
+              Resume
             </Link>
           </div>
         </motion.div>
