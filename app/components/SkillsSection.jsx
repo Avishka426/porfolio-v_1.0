@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("FrontEnd");
@@ -33,98 +34,103 @@ const SkillsSection = () => {
       {
         name: "HTML",
         level: "Advanced",
-        icon: "🌐"
+        icon: "/images/skills/html.png"
       },
       {
         name: "CSS",
         level: "Intermediate",
-        icon: "🎨"
+        icon: "/images/skills/css.png"
       },
       {
         name: "React",
         level: "Intermediate",
-        icon: "⚛️"
+        icon: "/images/skills/react.png"
       },
       {
         name: "Bootstrap",
         level: "Intermediate",
-        icon: "🅱️"
+        icon: "/images/skills/bootstrap.png"
       },
       {
         name: "Angular",
         level: "Beginner",
-        icon: "🅰️"
+        icon: "/images/skills/angular.png"
       }
     ],
     BackEnd: [
       {
         name: "Node.js",
         level: "Intermediate",
-        icon: "🟢"
+        icon: "/images/skills/nodejs.png"
       },
       {
         name: "Express.js",
         level: "Intermediate",
-        icon: "🚀"
+        icon: "/images/skills/express.png"
       },
       {
         name: "Python",
         level: "Advanced",
-        icon: "🐍"
+        icon: "/images/skills/python.png"
       },
       {
         name: "Java",
         level: "Intermediate",
-        icon: "☕"
+        icon: "/images/skills/java.png"
       },
       {
         name: "PHP",
         level: "Beginner",
-        icon: "🐘"
+        icon: "/images/skills/php.png"
+      },
+      {
+        name: "Ballerina",
+        level: "Intermediate",
+        icon: "/images/skills/ballerina.svg"
       }
     ],
     Database: [
       {
         name: "MySQL",
         level: "Intermediate",
-        icon: "🗄️"
+        icon: "/images/skills/mysql.png"
       },
       {
         name: "MongoDB",
         level: "Intermediate",
-        icon: "🍃"
+        icon: "/images/skills/mongodb.png"
       },
       {
         name: "PostgreSQL",
         level: "Beginner",
-        icon: "🐘"
+        icon: "/images/skills/postgresql.png"
       },
       {
         name: "Firebase",
         level: "Intermediate",
-        icon: "🔥"
+        icon: "/images/skills/firebasee.png"
       }
     ],
     "Mobile App Development": [
       {
         name: "React Native",
         level: "Intermediate",
-        icon: "📱"
+        icon: "/images/skills/react-native.png"
       },
       {
         name: "Flutter",
         level: "Beginner",
-        icon: "💙"
+        icon: "/images/skills/flutter.png"
       },
       {
         name: "Android Studio",
         level: "Beginner",
-        icon: "🤖"
+        icon: "/images/skills/android.png"
       },
       {
         name: "Kotlin",
         level: "Beginner",
-        icon: "🎯"
+        icon: "/images/skills/kotlin.png"
       }
     ]
   };
@@ -177,7 +183,14 @@ const SkillsSection = () => {
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="flex flex-col items-center text-center p-6 bg-[#1a1a1a] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300 border border-[#333]"
               >
-                <div className="text-4xl mb-4">{skill.icon}</div>
+                <div className="w-16 h-16 mb-4 relative">
+                  <Image
+                    src={skill.icon}
+                    alt={`${skill.name} logo`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <h3 className="text-xl font-bold mb-2 text-white">{skill.name}</h3>
                 <p className="text-gray-400 text-sm">{skill.level}</p>
               </motion.div>
