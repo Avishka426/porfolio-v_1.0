@@ -11,7 +11,7 @@ const projectsData = [
     description: "A personal portfolio website built with Next.js",
     image: "/images/projects/po.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Avishka426/porfolio-v_1.0.git",
     previewUrl: "/",
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     description: "E-Commerce website for Sri Lankan handicrafts",
     image: "/images/projects/lakpura.png",
     tag: ["All", "Web"],
-    gitUrl: "",
+    gitUrl: "https://github.com/Avishka426/Lakpura-E-Commerce.git",
     previewUrl: "/",
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     description: "AutoMeet chrome extension",
     image: "/images/projects/ex.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Avishka426/automeet_extension.git",
     previewUrl: "/",
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     description: "React native app to find recipes",
     image: "/images/projects/re.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Avishka426/react-native-recipe-app.git",
     previewUrl: "/",
   },
   
