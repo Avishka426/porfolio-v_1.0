@@ -181,13 +181,13 @@ const AboutSection = () => {
               className="relative overflow-hidden rounded-2xl"
             >
               <Image 
-                src="/images/about-image.png" 
+                src="/images/mee.png" 
                 width={500} 
                 height={500} 
                 alt="About me"
                 className="rounded-2xl hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t rounded-2xl"></div>
             </motion.div>
           </div>
           
