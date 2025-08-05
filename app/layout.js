@@ -12,15 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <head />
+      <body className={inter.className}>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8375898886399091"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
-      </head>
-      <body className={inter.className}>
         {children}
       </body>
     </html>
